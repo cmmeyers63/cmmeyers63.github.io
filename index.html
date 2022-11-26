@@ -18,13 +18,22 @@
               <a class="nav-link active" href="#">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Resume</a>
+              <a class="nav-link" href="resume.html">Resume</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Projects
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Furnace Controller</a></li>
+                    <li><a class="dropdown-item" href="#">Regular Expression Compiler </a></li>
+                    <li><a class="dropdown-item" href="#">WebGL Minecraft</a></li>
+                    <li><a class="dropdown-item" href="#">Spacecat</a></li>
+                    <!--https://spacecat.coltonmeyers1.repl.co/-->
+                </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="projects.html">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Games</a>
+                <a class="nav-link" href="https://github.com/cmmeyers63">Github</a>
             </li>
         </ul>
 
@@ -46,11 +55,12 @@
                 <div>
                     Hi, I'm Colton <br>
                     I am originally from Conifer, Colorado, but after graduating from the School of Mines I moved to beautiful 
-                    Portland Oregon with my girlfriend Alissa. Here I'm enjoying exploring the Portland area, programming (of course), and 
+                    Portland Oregon with my girlfriend Alissa. Here, I'm enjoying exploring the Portland area, programming (of course), and 
                     lots of rock climbing.
                     <br>
                     This site showcases some of my hobby projects and serves to help put a face behind the resume. I hope you enjoy it. &#128512
                 </div>
+                <br>
                 <div class="content_title"> Rock Climbing </div> 
 
                 Here are some routes that I've climbed in the past. Click on them to go to their relevant 
@@ -58,39 +68,39 @@
 
                 <br>
                 <div class="gallery">
-                    <img src="images/splatte.jpg" alt="South Platte Climbing Picture" onclick="alert('hello');" height="375">
+                    <img src="images/splatte.jpg" alt="South Platte Climbing Picture" height="375" onclick="OpenTab('https://www.mountainproject.com/area/105797908/cynical-pinnacle');">
                     <div class="desc">Route: Cynical Pinnacle</div>
                     </div>
                     <div class="gallery">
-                        <img src="images/ved.jpg" alt="Vedauwoo Climbing Picture" height="375">
+                        <img src="images/ved.jpg" alt="Vedauwoo Climbing Picture" height="375" onclick="OpenTab('https://www.mountainproject.com/route/105751375/lower-progressive');">
                         <div class="desc">Route: Lower Progressive</div>
                     </div>
                     <div class="gallery">
-                        <img src="images/creek.jpg" alt="Indian Creek Climbing Picture" width="281.25" height="375">
+                        <img src="images/creek.jpg" alt="Indian Creek Climbing Picture" width="281.25" height="375" onclick="OpenTab('https://www.mountainproject.com/area/105788880/escalante-canyon');">
                         <div class="desc">Route: Sand Dance</div>
                     </div>
                     <div class="gallery">
-                        <img src="images/bocan.jpg" alt="Boulder Canyon Climbing Picture" height="375">
+                        <img src="images/bocan.jpg" alt="Boulder Canyon Climbing Picture" height="375" onclick="OpenTab('https://www.mountainproject.com/route/105764586/romancing-the-stone');">
                         <div class="desc">Route: Romancing the Stone</div>
                     </div>
                     <div class="gallery">
-                        <img src="images/yellow_spur.jpg" alt="Yellow Spur" height="375">
+                        <img src="images/yellow_spur.jpg" alt="Yellow Spur" height="375" onclick="OpenTab('https://www.mountainproject.com/route/105748657/the-yellow-spur');">
                         <div class="desc">Route: Yellow Spur</div>
                     </div>
                     <div class="gallery">
-                        <img src="images/rifle.jpg" alt="Rifle" height="375">
-                        <div class="desc">Route: Buster Brown</div>
+                        <img src="images/rifle.jpg" alt="Rifle" height="375" onclick="OpenTab('https://www.mountainproject.com/route/105753295/defenseless-betty');">
+                        <div class="desc">Route: Defenseless Betty</div>
                     </div>
                     <div class="gallery">
-                        <img src="images/castleton.jpg" alt="Castleton Tower" height="375">
+                        <img src="images/castleton.jpg" alt="Castleton Tower" height="375" onclick="OpenTab('https://www.mountainproject.com/route/105717319/north-face');">
                         <div class="desc">Route: North Face of Castleton</div>
                     </div>
                     <div class="gallery">
-                        <img src="images/east_eden.jpg" alt="East of Eden" height="375">
+                        <img src="images/east_eden.jpg" alt="East of Eden" height="375" onclick="OpenTab('https://www.mountainproject.com/route/105755080/east-of-eden');">
                         <div class="desc">Route: East of Eden</div>
                     </div>
                     <div class="gallery">
-                        <img src="images/trout.jpg" alt="Trout Creek" height="375">
+                        <img src="images/trout.jpg" alt="Trout Creek" height="375" onclick="OpenTab('https://www.mountainproject.com/area/106505473/trout-creek');">
                         <div class="desc">Area: Trout Creek</div>
                     </div>
             </div>
@@ -99,6 +109,11 @@
     </div>
     
     
+    <script>
+        function OpenTab(url) {
+            window.open(url, "_blank");
+        }
+    </script>
 
 	<script src="index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

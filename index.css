@@ -1,6 +1,10 @@
 
+body {
+    background-color: #f1f1f1;
+}
+
 .wrapper {
-    width: 80%;
+    width: 95%;
     margin: auto;
     max-width: 1100px;
 }
@@ -9,9 +13,14 @@
     background-color: #f1f1f1;
 }
 
+.nav-link:hover {
+    color: blue;
+    font-weight: bold;
+    background-color: #f1f1f1;
+}
+
 main {
     padding: 1em;
-
     background-color: #f1f1f1;
 }
 
@@ -48,7 +57,7 @@ img {
 
 img:hover {
     transform: scale(.95);
-    cursor: grab;
+    cursor: pointer;
 }
 
 /* Gallery description, try to use relative units */
