@@ -1,0 +1,61 @@
+
+.wrapper {
+    width: 80%;
+    margin: auto;
+    max-width: 1100px;
+}
+
+.nav {
+    background-color: #f1f1f1;
+}
+
+main {
+    padding: 1em;
+
+    background-color: #f1f1f1;
+}
+
+div.section_title {
+    background-color: #a0a0d0;
+    border: 1px solid #606090;
+    padding: .25em;
+    font-style: italic;
+}
+
+
+div.content_box {
+    /* border: 1px solid #606090; */
+    padding: .25em;
+    font-size: large;
+}
+
+div.content_title {
+    font-size: larger;
+    padding-top: .25em;
+}
+
+
+/* Styles for the image gallery */
+div.gallery {
+	display: inline-block;
+	background-color: #649DBD;
+}
+
+/* Image inside gallary */
+img {
+
+}
+
+img:hover {
+    transform: scale(.95);
+    cursor: grab;
+}
+
+/* Gallery description, try to use relative units */
+div.desc {
+	text-align: center;
+	font-style: italic;
+	font-size: 1em;
+	background-color: #649DBD;
+	border:solid black;
+}
